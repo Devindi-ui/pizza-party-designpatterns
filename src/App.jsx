@@ -141,9 +141,11 @@ function App() {
       </div>
       <div className="output">
         <h2>Console Output</h2>
-        {output.map((line, index) => (
-          <p key={index}>{line}</p>
-        ))}
+        <div className="output-content">
+          {output.map((line, index) => (
+            <p key={index}>{line}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
